@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:visibility="visible"
+    tools:context=".OptionsDisplay"
+    tools:visibility="visible">
+
+    <Button
+        android:id="@+id/membersBtn"
+        android:layout_width="190dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/mybutton"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:onClick="showBtnClick"
+        android:text="View/Delete Members"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clearBtn" />
+
+    <Button
+        android:id="@+id/addMembersBtn"
+        android:layout_width="190dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/mybutton"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:onClick="AddBtnClick"
+        android:text="Add Members"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/membersBtn" />
+
+    <Button
+        android:id="@+id/eventBtn"
+        android:layout_width="190dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/mybutton"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:onClick="eventBtnClick"
+        android:text="New Event"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addMembersBtn" />
+
+    <Button
+        android:id="@+id/clearBtn"
+        android:layout_width="190dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/mybutton"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:onClick="clearBtn"
+        android:text="Clear List"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toTopOf="@+id/membersBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="309dp"
+        android:layout_height="168dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="56dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:srcCompat="@drawable/logo1conv" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="194dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/mybutton"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:onClick="viewAttendance"
+        android:text="View Attendance"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eventBtn" />
+</android.support.constraint.ConstraintLayout>
